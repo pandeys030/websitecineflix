@@ -94,4 +94,9 @@
       padding: 10px;
     }
   }
+  .highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+  }
   
