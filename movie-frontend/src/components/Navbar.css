@@ -32,9 +32,18 @@
 }
 
 .navbar-links li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    background-color: red; 
+    padding: 10px 15px;  
+    border-radius: 5px;   
 }
+
+.navbar-links li a:hover {
+    background-color: black;
+    color: yellow;  
+}
+
 
 .navbar-search-container {
     position: relative;
