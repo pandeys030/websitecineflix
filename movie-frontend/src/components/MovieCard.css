@@ -1,0 +1,32 @@
+/* src/components/MovieCard.css */
+
+.movie-card {
+  width: 150px; /* Adjust as needed */
+  margin: 10px; /* Space between cards */
+  cursor: pointer; /* Show pointer on hover */
+  border-radius: 5px; /* Slightly rounded corners */
+  overflow: hidden; /* Hide overflow for the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.movie-poster {
+  width: 100%; /* Full width to fit the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area, cropping as needed */
+}
+
+.movie-title {
+  font-size: 14px; /* Adjust font size */
+  font-weight: bold; /* Bold title for emphasis */
+  color: #fff; /* White color for better contrast */
+  text-align: center; /* Center the text */
+  margin-top: 5px; /* Space above the title */
+  padding: 0 5px; /* Padding for better spacing */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+  border-radius: 4px; /* Rounded corners for the title background */
+}

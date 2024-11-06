@@ -1,0 +1,116 @@
+/* src/pages/Home.css */
+
+.home {
+  background-color: #141414; /* Dark background */
+  min-height: 100vh;
+  color: white;
+}
+
+.movie-sections {
+  padding: 20px 4%;
+  background-color: #141414; /* Dark background for a Netflix-like appearance */
+}
+
+.movie-list {
+  margin-bottom: 40px;
+}
+
+.movie-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold; /* Make title bold for emphasis */
+  color: #e5e5e5; /* Light grey color for titles */
+  text-transform: uppercase; /* Uppercase for a more modern look */
+}
+
+.movies {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 20px; /* Increased gap for a spacious layout */
+  padding: 20px 0;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Movie card styles */
+.movie {
+  width: 250px; /* Fixed width for Netflix-like poster size */
+  height: 375px; /* Fixed height for Netflix-like poster size */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  overflow: hidden; /* Hide overflow for cleaner appearance */
+  transition: transform 0.2s, box-shadow 0.3s; /* Smooth hover effect */
+  position: relative; /* For stacking context on hover */
+}
+
+.movie img {
+  width: 100%; /* Ensure images fit the container */
+  height: auto; /* Allow height to adjust based on aspect ratio */
+  max-height: 375px; /* Maximum height to maintain consistency */
+  object-fit: cover; /* Cover the entire area without distortion */
+  border-radius: 8px; /* Match image with rounded corners */
+}
+
+.movie:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Hide scrollbar but keep functionality */
+.movies::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.movies {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .movie-sections {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .movie-list h2 {
+    font-size: 1.3rem; /* Slightly smaller font size for titles */
+  }
+
+  .movies {
+    gap: 16px; /* Maintain reasonable gap */
+  }
+
+  .movie {
+    width: 200px; /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Optional: Add fade effect on edges */
+.movie-list {
+  position: relative;
+}
+
+.movie-list::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background: linear-gradient(to right, transparent, #141414);
+  pointer-events: none;
+}
+
+/* Additional styling for title in movie cards */
+.movie-title {
+  text-align: center; /* Center align the title */
+  padding: 5px 0; /* Padding around the title */
+  font-weight: bold; /* Bold font */
+  color: #e5e5e5; /* Title color to match the theme */
+  font-size: 1rem; /* Font size for title */
+}
+
+/* Style for movie card elements */
+.movie-card {
+  border-radius: 8px; /* Rounded corners for a sleek look */
+  overflow: hidden; /* Ensure no overflow of content */
+}

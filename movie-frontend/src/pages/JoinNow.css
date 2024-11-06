@@ -1,0 +1,93 @@
+/* src/pages/JoinNow.css */
+
+.join-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.join-now h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  max-width: 90%;
+  color: #e5e5e5;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.join-now p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #b3b3b3;
+  max-width: 80%;
+  line-height: 1.4;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-form input {
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease;
+}
+
+.join-form input:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.join-form button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+  text-transform: uppercase;
+  max-width: 350px;
+  width: 100%;
+}
+
+.join-form button:hover {
+  background-color: #f40612;
+  transform: scale(1.02);
+}
+
+.login-prompt {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+.login-prompt a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-prompt a:hover {
+  text-decoration: underline;
+}
