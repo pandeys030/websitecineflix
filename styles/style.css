@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  #search-bar {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+  }
+  
+  #movie-grid, #movie-details, #video-player {
+    padding: 1rem;
+  }
+  
