@@ -4,7 +4,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import MovieDetails from './components/MovieDetails';
-import JoinNow from './pages/JoinNow';  // Import JoinNow component
+import JoinNow from './pages/JoinNow';
+import SearchPage from './pages/SearchPage';  // Import the SearchPage component
 import './App.css';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies/:movieId" element={<MovieDetails />} />
-          <Route path="/join-now" element={<JoinNow />} />  {/* Add JoinNow route */}
+          <Route path="/join-now" element={<JoinNow />} />
+          <Route path="/search" element={<SearchPage />} />  // Add the route for SearchPage
         </Routes>
       </div>
     </Router>
