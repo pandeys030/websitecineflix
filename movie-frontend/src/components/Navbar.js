@@ -6,18 +6,13 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+ // const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    if (searchQuery) {
-      navigate(`/search?q=${searchQuery}`);
-      setSearchOpen(false);
-      setSearchQuery('');  // Reset the search input after navigation
-    }
+  const handleSearchIconClick = () => {
+    navigate('/search');  // Navigate directly to the search page
+    setSearchOpen(false);  // Close the search input if open
   };
-
   return (
     <div className="navbar">
       <h1 className="navbar-logo">CineFlix</h1>
@@ -28,18 +23,11 @@ const Navbar = () => {
         <li><Link to="/join-now">Join Now</Link></li>
       </ul>
 
-      {/* Search Icon and Overlay Input */}
-      <div className="navbar-search-container">
-        <span className="search-icon" onClick={() => setSearchOpen(!searchOpen)}>🔍</span>
+        <div className="navbar-search-container">
+  <span className="search-icon" onClick={handleSearchIconClick}>🔍</span>
+
         {searchOpen && (
-          <form onSubmit={handleSearchSubmit} className="navbar-search-form">
-            <input
-              type="text"
-              placeholder="Titles, genres, people"
-              className="navbar-search-input"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
+          <form onSubmit={handleSearchIconClick} className="navbar-search-form">
           </form>
         )}
       </div>

@@ -159,7 +159,11 @@ const MovieDetails = () => {
       '16':{
         id: 16,
         title: 'The Lord of the Rings: The Return of the King',
+<<<<<<< HEAD
         poster:'/poster/find.jpg',
+=======
+        poster: '/poster/lord.jpg',
+>>>>>>> e77613493a6534bc1290554463a47c719c4fd178
         releaseDate: '2003',
         genre: ['Fantasy', 'Adventure', 'Action'],
         rating: '9.0/10',
