@@ -32,7 +32,6 @@
 }
 
 .navbar-links li a {
-<<<<<<< HEAD
     color: #FAFAFA;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1); /* Soft, transparent white background */
@@ -44,19 +43,12 @@
 .navbar-links li a:hover {
     background-color: #FFC1E3; /* Pink hover effect for contrast */
     color: #000; /* Black text on hover */
-    box-shadow: 0 4px 10px rgba(255, 193, 227, 0.3); /* Pink shadow effect */
-=======
-    color: #ffffff;
-    text-decoration: none;
-    background-color: red; 
-    padding: 10px 15px;  
-    border-radius: 5px;   
->>>>>>> e77613493a6534bc1290554463a47c719c4fd178
+    box-shadow: 0 4px 10px ; /* Pink shadow effect */
 }
 
 .navbar-links li a:hover {
-    background-color: black;
-    color: yellow;  
+    background-color: #FFC1E3;
+    color: #000;  
 }
 
 

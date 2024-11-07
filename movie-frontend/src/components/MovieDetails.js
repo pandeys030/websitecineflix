@@ -159,16 +159,12 @@ const MovieDetails = () => {
       '16':{
         id: 16,
         title: 'The Lord of the Rings: The Return of the King',
-<<<<<<< HEAD
-        poster:'/poster/find.jpg',
-=======
-        poster: '/poster/lord.jpg',
->>>>>>> e77613493a6534bc1290554463a47c719c4fd178
-        releaseDate: '2003',
-        genre: ['Fantasy', 'Adventure', 'Action'],
-        rating: '9.0/10',
-        director: 'Peter Jackson',
-        description: 'In the final chapter of J.R.R. Tolkien’s legendary saga, the forces of Middle-earth prepare for an all-out battle against Sauron’s dark army. As Aragorn steps into his rightful role as king, Frodo and Sam struggle to reach Mount Doom to destroy the One Ring. With allies gathered and enemies closing in, the fate of Middle-earth rests on a single act of courage. An epic tale of friendship and resilience, this film combines breathtaking battles and heartfelt moments to deliver a grand conclusion.'
+poster: '/poster/lord.jpg',  // Keep this if you want the poster image
+releaseDate: '2003',
+genre: ['Fantasy', 'Adventure', 'Action'],
+rating: '9.0/10',
+director: 'Peter Jackson',
+description: 'In the final chapter of J.R.R. Tolkien’s legendary saga, the forces of Middle-earth prepare for an all-out battle against Sauron’s dark army. As Aragorn steps into his rightful role as king, Frodo and Sam struggle to reach Mount Doom to destroy the One Ring. With allies gathered and enemies closing in, the fate of Middle-earth rests on a single act of courage. An epic tale of friendship and resilience, this film combines breathtaking battles and heartfelt moments to deliver a grand conclusion.'
       },
      '17': {
         id: 17,
