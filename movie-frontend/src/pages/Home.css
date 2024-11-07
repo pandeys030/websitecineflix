@@ -1,14 +1,12 @@
-/* src/pages/Home.css */
-
 .home {
-  background-color: #141414; /* Dark background */
+  background-color: #000; /* Solid black background */
   min-height: 100vh;
-  color: white;
+  color: #F5F5F5; /* Soft white for readability */
 }
 
 .movie-sections {
   padding: 20px 4%;
-  background-color: #141414; /* Dark background for a Netflix-like appearance */
+  background-color: transparent; /* Transparent to let black background show through */
 }
 
 .movie-list {
@@ -16,75 +14,81 @@
 }
 
 .movie-list h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 20px;
-  font-weight: bold; /* Make title bold for emphasis */
-  color: #e5e5e5; /* Light grey color for titles */
-  text-transform: uppercase; /* Uppercase for a more modern look */
+  font-weight: bold;
+  color: #FFC1E3; /* Blush pink to complement the black background */
+  text-transform: uppercase;
+  text-shadow: 1px 1px 8px rgba(255, 193, 227, 0.6); /* Subtle glow for an ethereal look */
 }
 
 .movies {
   display: flex;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  gap: 20px; /* Increased gap for a spacious layout */
+  overflow-x: auto;
+  gap: 28px;
   padding: 20px 0;
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 /* Movie card styles */
 .movie {
-  width: 250px; /* Fixed width for Netflix-like poster size */
-  height: 375px; /* Fixed height for Netflix-like poster size */
-  border-radius: 8px; /* Rounded corners for a softer look */
-  overflow: hidden; /* Hide overflow for cleaner appearance */
-  transition: transform 0.2s, box-shadow 0.3s; /* Smooth hover effect */
-  position: relative; /* For stacking context on hover */
+  width: 250px;
+  height: 375px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(14px); /* Stronger blur for a frosted glass look */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.4s;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow for more contrast */
 }
 
 .movie img {
-  width: 100%; /* Ensure images fit the container */
-  height: auto; /* Allow height to adjust based on aspect ratio */
-  max-height: 375px; /* Maximum height to maintain consistency */
-  object-fit: cover; /* Cover the entire area without distortion */
-  border-radius: 8px; /* Match image with rounded corners */
+  width: 100%;
+  height: auto;
+  max-height: 375px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .movie:hover {
-  transform: scale(1.05); /* Slightly scale up on hover */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  transform: scale(1.08); /* Slightly larger scale for a subtle hover effect */
+  box-shadow: 0 8px 25px rgba(194, 147, 229, 0.5); /* Lavender shadow for a soft neon effect */
+  border: 2px solid #C293E5; /* Lavender border on hover */
 }
 
 /* Hide scrollbar but keep functionality */
 .movies::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
+  display: none;
 }
 
 .movies {
-  -ms-overflow-style: none; /* Internet Explorer and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .movie-sections {
-    padding: 20px 10px; /* Adjust padding for smaller screens */
+    padding: 20px 10px;
   }
 
   .movie-list h2 {
-    font-size: 1.3rem; /* Slightly smaller font size for titles */
+    font-size: 1.4rem;
   }
 
   .movies {
-    gap: 16px; /* Maintain reasonable gap */
+    gap: 18px;
   }
 
   .movie {
-    width: 200px; /* Adjust width for smaller screens */
-    height: 300px; /* Adjust height for smaller screens */
+    width: 200px;
+    height: 300px;
   }
 }
 
-/* Optional: Add fade effect on edges */
+/* Fade effect on edges */
 .movie-list {
   position: relative;
 }
@@ -96,21 +100,22 @@
   top: 0;
   height: 100%;
   width: 50px;
-  background: linear-gradient(to right, transparent, #141414);
+  background: linear-gradient(to right, transparent, #000); /* Matches black background */
   pointer-events: none;
 }
 
-/* Additional styling for title in movie cards */
+/* Additional styling for movie card titles */
 .movie-title {
-  text-align: center; /* Center align the title */
-  padding: 5px 0; /* Padding around the title */
-  font-weight: bold; /* Bold font */
-  color: #e5e5e5; /* Title color to match the theme */
-  font-size: 1rem; /* Font size for title */
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  color: #FFC1E3; /* Blush pink */
+  font-size: 1rem;
+  text-shadow: 1px 1px 4px rgba(255, 193, 227, 0.7); /* Light glow */
 }
 
 /* Style for movie card elements */
 .movie-card {
-  border-radius: 8px; /* Rounded corners for a sleek look */
-  overflow: hidden; /* Ensure no overflow of content */
+  border-radius: 16px;
+  overflow: hidden;
 }

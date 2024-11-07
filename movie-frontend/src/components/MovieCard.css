@@ -4,29 +4,33 @@
   width: 150px; /* Adjust as needed */
   margin: 10px; /* Space between cards */
   cursor: pointer; /* Show pointer on hover */
-  border-radius: 5px; /* Slightly rounded corners */
+  border-radius: 10px; /* Slightly more rounded corners */
   overflow: hidden; /* Hide overflow for the rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: transform 0.3s ease; /* Smooth transform transition */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow for more depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add shadow transition */
 }
 
 .movie-card:hover {
   transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Increase shadow depth on hover */
 }
 
 .movie-poster {
   width: 100%; /* Full width to fit the card */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Cover the area, cropping as needed */
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2); /* Thin white border at the bottom */
 }
 
 .movie-title {
-  font-size: 14px; /* Adjust font size */
+  font-size: 16px; /* Adjusted font size for better readability */
   font-weight: bold; /* Bold title for emphasis */
   color: #fff; /* White color for better contrast */
   text-align: center; /* Center the text */
-  margin-top: 5px; /* Space above the title */
-  padding: 0 5px; /* Padding for better spacing */
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-  border-radius: 4px; /* Rounded corners for the title background */
+  margin-top: 10px; /* Increased space above the title */
+  padding: 5px 10px; /* More padding for a cleaner look */
+  background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background for readability */
+  border-radius: 6px; /* Rounded corners for the title background */
+  letter-spacing: 1px; /* Slight letter spacing for a modern touch */
+  text-transform: uppercase; /* Make title uppercase for emphasis */
 }

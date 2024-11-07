@@ -1,3 +1,5 @@
+/* src/components/Hero.css */
+
 .hero {
   position: relative;
   width: 100%;
@@ -8,6 +10,7 @@
   justify-content: center;
   color: white;
   text-align: center;
+  background: #141414; /* Dark background for fallback */
 }
 
 .hero-video {
@@ -24,27 +27,41 @@
   position: relative;
   z-index: 2;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background for readability */
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background for better readability */
+  border-radius: 12px; /* Slightly rounded corners for a smoother look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem; /* Increased size for more impact */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for better readability */
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.3rem; /* Slightly larger for better legibility */
+  margin-bottom: 25px;
+  line-height: 1.5; /* Improve readability */
 }
 
 .hero-button {
   background-color: #e50914;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px; /* Rounded corners */
+  transition: background-color 0.2s ease, transform 0.2s ease;
   z-index: 3; /* Ensure it appears above the video */
+}
+
+.hero-button:hover {
+  background-color: #f40612; /* Lighter red on hover */
+  transform: scale(1.05); /* Slight scale-up effect */
+}
+
+.hero-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5); /* Add a glowing effect for focus */
 }
