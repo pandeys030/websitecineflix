@@ -48,10 +48,13 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: flex-start;
 }
 
 .movie-poster {
     width: 150px;
+    height: auto;
+    max-width: 100%;
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.8); /* Stronger shadow for a more cinematic depth */
     transition: transform 0.3s ease;
@@ -119,6 +122,7 @@
     color: #d0d0d0;
     margin: 24px 0;
     max-width: 90%;
+    text-align: left; /* Ensure it's left aligned */
 }
 
 .cast {
@@ -183,13 +187,18 @@
     .details-content {
         flex-direction: column;
         align-items: center;
+        gap: 20px; /* Adjust the gap for better layout */
     }
+.watch-trailer{
 
-    .movie-poster {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 24px;
-    }
+
+}
+    /* .movie-poster {
+        width: 100%; /* Make the image fill its container */
+       /* max-width: 300px; /* Set a max-width for the image to prevent it from growing too large */
+       /* height: auto; /* Maintain aspect ratio */
+       /* object-fit: cover; /* Ensure the image doesn't distort */
+   /* } */
 
     .movie-info h1 {
         font-size: 2.5rem;
