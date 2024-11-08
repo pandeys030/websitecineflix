@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #141414;
-    color: #fff;
+    background-color: #141414; /* Dark black background */
+    color: #f7c2d3; /* Baby pink text color */
     text-align: center;
     padding: 20px;
 }
@@ -16,8 +16,8 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #e5e5e5;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+    color: #f7c2d3; /* Baby pink title */
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8); /* Subtle shadow for better readability */
 }
 
 .login-form {
@@ -34,8 +34,8 @@
     margin-bottom: 15px;
     width: 100%;
     border: 1px solid #333;
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Dark background for input fields */
+    color: #f7c2d3; /* Baby pink text inside the input */
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: border-color 0.3s ease;
@@ -43,12 +43,12 @@
 
 .login-form input:focus {
     outline: none;
-    border-color: #e50914;
+    border-color: #f7c2d3; /* Focus border in baby pink */
 }
 
 .login-form button {
-    background-color: #e50914;
-    color: white;
+    background-color: #f7c2d3; /* Baby pink background for button */
+    color: #141414; /* Black text for the button */
     border: none;
     padding: 12px 30px;
     font-size: 1.1rem;
@@ -56,24 +56,24 @@
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 4px 12px rgba(247, 194, 211, 0.3);
     text-transform: uppercase;
     width: 100%;
 }
 
 .login-form button:hover {
-    background-color: #f40612;
+    background-color: #e509c0; /* Red on hover for contrast */
     transform: scale(1.02);
 }
 
 .login-footer {
     margin-top: 20px;
     font-size: 0.9rem;
-    color: #b3b3b3;
+    color: #f7c2d3; /* Baby pink footer text */
 }
 
 .login-footer a {
-    color: #e50914;
+    color: #f7c2d3; /* Baby pink links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -85,5 +85,5 @@
 .login-terms {
     margin-top: 10px;
     font-size: 0.8rem;
-    color: #8c8c8c;
+    color: #b0b0b0; /* Subtle gray for terms text */
 }

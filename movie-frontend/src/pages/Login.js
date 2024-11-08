@@ -1,7 +1,6 @@
-// src/pages/Login.js
-
 import React from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';  // Import Link for navigation
 
 function Login() {
   return (
@@ -12,8 +11,8 @@ function Login() {
         <input type="password" placeholder="Password" required />
         <button type="submit">Log In</button>
       </form>
-      <div className="login-footer">
-        <p>New to CineFlix? <a href="/join-now">Sign up now</a></p>
+      <div className="login-footer"> 
+        <p>New to CineFlix? <Link to="/join-now">Sign up now</Link></p>
         <p className="login-terms">
           This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="/">Learn more</a>.
         </p>

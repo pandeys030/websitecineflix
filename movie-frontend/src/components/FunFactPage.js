@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './FunFactPage.css';
 
+
 const funFacts = [
   { title: "Barbie", fact: "Margot Robbie handpicked Ryan Gosling for the role of Ken, and he reportedly took the part after finding a Ken doll lying face-down in mud in his backyard" },
   { title: "Guardians of the Galaxy Vol. 3", fact: "James Gunn confirmed that the song 'Dog Days Are Over' by Florence + The Machine was in the movie because it perfectly captured the celebratory spirit of the Guardians' last adventure." },
@@ -146,22 +147,18 @@ const funFacts = [
 ];
 
 const FunFactPage = () => {
-  console.log('Rendering FunFactPage'); // Add this for debugging
-  
   return (
-    <div className="funfact-container" style={{backgroundColor: '#1a1f2e', minHeight: '100vh'}}>
-      <h1 style={{color: '#ffffff'}}>Movie Fun Facts</h1>
-      <div style={{padding: '20px'}}>
-        <ul className="funfact-list">
-          {funFacts.map((fact, index) => (
-            <li key={index} className="funfact-item" style={{backgroundColor: '#2a3142', margin: '10px', padding: '15px', borderRadius: '8px'}}>
-              <h3 style={{color: '#e2e8f0'}}>{fact.title}</h3>
-              <p style={{color: '#94a3b8'}}>{fact.fact}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <Link to="/" style={{color: '#60a5fa'}}>Back to Home</Link>
+    <div className="funfact-container">
+      <h1>Movie Fun Facts</h1>
+      <ul className="funfact-list">
+        {funFacts.map((fact, index) => (
+          <li key={index} className="funfact-item">
+            <h3>{fact.title}</h3>  {/* Render the title */}
+            <p>{fact.fact}</p>     {/* Render the fact */}
+          </li>
+        ))}
+      </ul>
+      <Link to="/">Back to Home</Link>
     </div>
   );
 };

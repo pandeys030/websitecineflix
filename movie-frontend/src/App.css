@@ -1,13 +1,19 @@
 /* src/App.css */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Remove the dark background-color from here */
 }
 
-.app {
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
+.App {  /* Note: capital 'A' in App to match your React component */
+  min-height: 100vh;
+  /* Remove the padding and max-width from here since FunFactPage has its own container */
+}
+
+/* If you want dark mode, use a media query instead */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
 }

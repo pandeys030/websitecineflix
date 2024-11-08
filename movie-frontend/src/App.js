@@ -3,8 +3,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import FunFactPage from './pages/FunFactPage';  // Import the FunFactPage component
-import JoinNow from './pages/JoinNow'; // Import the SearchPage component
+import MovieDetails from './components/MovieDetails';
+import JoinNow from './pages/JoinNow';  // Import JoinNow component
+import Login from './pages/Login';
+import FunFacts from './pages/FunFactPage';
+
 import './App.css';
 
 function App() {
@@ -13,9 +16,10 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/fun-fact-page" element={<FunFactPage />} />  // Updated to use FunFactPage
-          <Route path="/join-now" element={<JoinNow />} />
-          
+          <Route path="/movies/:movieId" element={<MovieDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/join-now" element={<JoinNow />} />  {/* Add JoinNow route */}
+          <Route path="/fun-fact-page" element={<FunFacts />} /> 
         </Routes>
       </div>
     </Router>

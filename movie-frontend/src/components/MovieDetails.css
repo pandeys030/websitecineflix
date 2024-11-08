@@ -76,6 +76,7 @@
     margin-bottom: 16px;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9); /* Stronger shadow for better contrast */
     color: #f7c2d3; /* Baby pink for movie title */
+    text-align: left; /* Align the title to the left */
 }
 
 .movie-meta {
@@ -157,12 +158,12 @@
 }
 
 .play-button {
-    background-color: #ff3b30; /* Red play button */
+    background-color: #f7c2d3; /* Red play button */
     color: white;
 }
 
 .play-button:hover {
-    background-color: #ff1a0d; /* Darker red on hover */
+    background-color: #ff0d82; /* Darker red on hover */
     transform: scale(1.02);
 }
 
