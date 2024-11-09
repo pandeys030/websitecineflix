@@ -181,6 +181,15 @@
     background-color: rgba(156, 156, 161, 0.5);
     transform: scale(1.02);
 }
+.watch-trailer {
+    background-color: #f7c2d3; /* Red play button */
+    color: white;
+}
+
+.watch-trailer:hover {
+    background-color: #ff0d82; /* Darker red on hover */
+    transform: scale(1.02);
+}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
