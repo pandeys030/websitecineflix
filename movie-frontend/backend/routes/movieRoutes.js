@@ -1,70 +1,60 @@
-const express = require('express');
-const router = express.Router();
-const Movie = require('../models/movie'); // Path to your movie model
+// // routes/movieRoutes.js
+// import express from "express";
+// import Movie from "../models/movie.js";
 
-// Create a new movie
-router.post('/', async (req, res) => {
-    try {
-        const movie = new Movie(req.body);
-        await movie.save();
-        res.status(201).send(movie);
-    } catch (error) {
-        res.status(400).send(error);
-    }
-});
+// const router = express.Router();
+
+// // Get all movies
+// router.get("/", async (req, res) => {
+//   try {
+//     const movies = await Movie.find();
+//     res.json(movies);
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// });
+
+// // Get a movie by ID
+// router.get("/:id", async (req, res) => {
+//   try {
+//     const movie = await Movie.findById(req.params.id);
+//     if (!movie) return res.status(404).json({ message: "Movie not found" });
+//     res.json(movie);
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// });
+
+// export default router;
+import express from "express";
+import Movie from "../models/movie.js";
+
+const router = express.Router();
 
 // Get all movies
-router.get('/', async (req, res) => {
-    try {
-        const movies = await Movie.find();
-        res.send(movies);
-    } catch (error) {
-        res.status(500).send(error);
-    }
+router.get("/", async (req, res) => {
+  try {
+    const movies = await Movie.find();
+    res.json(movies);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 });
 
 // Get a movie by ID
-router.get('/:id', async (req, res) => {
-    try {
-        const movie = await Movie.findById(req.params.id);
-        if (!movie) {
-            return res.status(404).send();
-        }
-        res.send(movie);
-    } catch (error) {
-        res.status(500).send(error);
-    }
+router.get("/:id", async (req, res) => {
+  if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+    return res.status(400).json({ message: 'Invalid movie ID format' });
+  }
+  try {
+    const movie = await Movie.findById(req.params.id);
+    console.log("Searching for movie with ID:", req.params.id);
+
+    if (!movie) return res.status(404).json({ message: "Movie not found" });
+    res.json(movie);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 });
 
-// Update a movie by ID
-router.patch('/:id', async (req, res) => {
-    try {
-        const movie = await Movie.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        if (!movie) {
-            return res.status(404).send();
-        }
-        res.send(movie);
-    } catch (error) {
-        res.status(400).send(error);
-    }
-});
-
-// Delete a movie by ID
-router.delete('/:id', async (req, res) => {
-    try {
-        const movie = await Movie.findByIdAndDelete(req.params.id);
-        if (!movie) {
-            return res.status(404).send();
-        }
-        res.send(movie);
-    } catch (error) {
-        res.status(500).send(error);
-    }
-});
-
-module.exports = router;
- HEAD
- 
-
-
- origin/master
+export default router;
