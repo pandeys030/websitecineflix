@@ -1,16 +1,11 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const connectDB = async () => {
-    try {
-        await mongoose.connect('mongodb://localhost:27017/moviesDB', {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log('Connected to MongoDB!');
-    } catch (error) {
-        console.error('Error connecting to MongoDB:', error.message);
-        process.exit(1); // Exit process if unable to connect
-    }
-};
 
-module.exports = connectDB;
+mongoose.connect('mongodb://localhost:27017/movieDB', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
+module.exports = mongoose;
