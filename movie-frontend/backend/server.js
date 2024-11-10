@@ -1,6 +1,7 @@
+// server.js
 import cors from 'cors';
 import express from 'express';
-import mongoose from 'mongoose';
+import connectDB from './config/db.js'; // Default import for connectDB
 import movieRoutes from './routes/movieRoutes.js'; // Import movie routes
 import myListRoutes from './routes/myListRoutes.js'; // Import my list routes
 
@@ -12,15 +13,10 @@ app.use(express.json()); // Parse JSON data in the request body
 
 // API Routes
 app.use('/api/movies', movieRoutes); // Route for movie-related actions
-app.use('/api/myList', myListRoutes); // Route for My List actions
+app.use('/api/my-list', myListRoutes); // Route for My List actions
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/movieDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
+connectDB();
 
 // Start the server
 app.listen(3001, () => {
