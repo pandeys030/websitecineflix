@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const handleSearchIconClick = () => {
     navigate('/search');  // Navigate directly to the search page
+    console.log("Navigating to search page"); 
     setSearchOpen(false);  // Close the search input if open
   };
 
