@@ -5,7 +5,7 @@ import MyList from "../models/myList.js";
 const router = express.Router();
 
 // POST route to add a movie to My List
-app.post('/', async (req, res) => {
+router.post('/', async (req, res) => {
   const { movieId, title } = req.body;
 
   // Check if the movie already exists in the user's list
