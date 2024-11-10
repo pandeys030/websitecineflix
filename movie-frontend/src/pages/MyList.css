@@ -1,0 +1,55 @@
+/* MyList.css */
+.my-list-page {
+    padding: 20px;
+  }
+  
+  .movie-card {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .movie-poster {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movie-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .movie-description {
+    margin: 10px 0;
+  }
+  
+  .remove-button {
+    background-color: rgb(17, 16, 16);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: rgb(139, 0, 107);
+  }
+  
+  .movie-trailer-link {
+    color: blue;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .movie-trailer-link:hover {
+    text-decoration: underline;
+  }
+  
