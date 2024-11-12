@@ -9,7 +9,7 @@ router.post('/', async (req, res) => {
   const { movieId, title } = req.body;
 
   // Check if the movie already exists in the user's list
-  const existingMovie = await MovieList.findOne({ where: { movieId } });
+  const existingMovie = await MyList.findOne({ where: { movieId } });
   
   if (existingMovie) {
     return res.status(400).json({ message: 'Movie is already in your list.' });
@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
 
   // If not, add the movie to the list
   try {
-    const newMovie = await MovieList.create({ movieId, title });
+    const newMovie = await MyList.create({ movieId, title });
     return res.status(200).json(newMovie);
   } catch (error) {
     return res.status(500).json({ message: 'Error adding movie to the list.' });
