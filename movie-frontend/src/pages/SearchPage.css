@@ -1,6 +1,5 @@
 /* src/pages/SearchPage.css */
 
-/* General styles */
 .search-page {
     padding: 20px;
     background-color: #141414;
@@ -29,7 +28,7 @@
     background-color: #555;
   }
   
-  /* Movie list styles */
+  
   .movie-list {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +39,7 @@
   .movie-card {
     display: flex;
     align-items: center;
-    width: 600px; /* Adjust to the size you prefer */
+    width: 600px; 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
@@ -57,12 +56,12 @@
     width: 200px;
     height: 300px;
     object-fit: cover;
-    border-right: 3px solid #444; /* Add border between the poster and movie info */
+    border-right: 3px solid #444; 
   }
   
   .movie-info {
     padding: 20px;
-    width: calc(100% - 200px); /* Ensure the info takes the remaining space */
+    width: calc(100% - 200px); 
   }
   
   .movie-title {
@@ -76,12 +75,12 @@
     color: #ccc;
   }
   
-  /* Mobile responsiveness */
+  
   @media (max-width: 768px) {
     .movie-card {
       width: 100%;
       max-width: 600px;
-      flex-direction: column; /* Stack the poster and details vertically */
+      flex-direction: column; 
     }
   
     .movie-poster {

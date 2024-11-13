@@ -43,8 +43,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px; /* Add space between cards in the same column */
-  min-height: 350px; /* Makes cards longer */
+  margin-bottom: 30px; 
+  min-height: 350px; 
 }
 
 .funfact-item::before {
@@ -71,7 +71,7 @@ h1 {
   text-align: center;
   line-height: 1.6;
   padding: 0 15px;
-  flex-grow: 1; /* Allows text to fill available space */
+  flex-grow: 1; 
 }
 
 .funfact-item:hover {
@@ -94,7 +94,7 @@ a:hover {
   color: #93c5fd;
 }
 
-/* Responsive design */
+
 @media (max-width: 1024px) {
   .funfact-list {
     grid-template-columns: repeat(2, 1fr);

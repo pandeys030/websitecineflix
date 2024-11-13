@@ -1,12 +1,12 @@
 .home {
-  background-color: #000; /* Solid black background */
+  background-color: #000;
   min-height: 100vh;
-  color: #F5F5F5; /* Soft white for readability */
+  color: #F5F5F5;
 }
 
 .movie-sections {
   padding: 20px 4%;
-  background-color: transparent; /* Transparent to let black background show through */
+  background-color: transparent;
 }
 
 .movie-list {
@@ -17,9 +17,9 @@
   font-size: 1.6rem;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #FFC1E3; /* Blush pink to complement the black background */
+  color: #FFC1E3;
   text-transform: uppercase;
-  text-shadow: 1px 1px 8px rgba(255, 193, 227, 0.6); /* Subtle glow for an ethereal look */
+  text-shadow: 1px 1px 8px rgba(255, 193, 227, 0.6);
 }
 
 .movies {
@@ -30,18 +30,17 @@
   scroll-behavior: smooth;
 }
 
-/* Movie card styles */
 .movie {
   width: 250px;
   height: 375px;
   border-radius: 16px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1); /* Glass effect */
-  backdrop-filter: blur(14px); /* Stronger blur for a frosted glass look */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s, box-shadow 0.4s;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow for more contrast */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .movie img {
@@ -53,12 +52,11 @@
 }
 
 .movie:hover {
-  transform: scale(1.08); /* Slightly larger scale for a subtle hover effect */
-  box-shadow: 0 8px 25px rgba(194, 147, 229, 0.5); /* Lavender shadow for a soft neon effect */
-  border: 2px solid #C293E5; /* Lavender border on hover */
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(194, 147, 229, 0.5);
+  border: 2px solid #C293E5;
 }
 
-/* Hide scrollbar but keep functionality */
 .movies::-webkit-scrollbar {
   display: none;
 }
@@ -68,7 +66,6 @@
   scrollbar-width: none;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .movie-sections {
     padding: 20px 10px;
@@ -88,7 +85,6 @@
   }
 }
 
-/* Fade effect on edges */
 .movie-list {
   position: relative;
 }
@@ -100,21 +96,19 @@
   top: 0;
   height: 100%;
   width: 50px;
-  background: linear-gradient(to right, transparent, #000); /* Matches black background */
+  background: linear-gradient(to right, transparent, #000);
   pointer-events: none;
 }
 
-/* Additional styling for movie card titles */
 .movie-title {
   text-align: center;
   padding: 8px 0;
   font-weight: bold;
-  color: #FFC1E3; /* Blush pink */
+  color: #FFC1E3;
   font-size: 1rem;
-  text-shadow: 1px 1px 4px rgba(255, 193, 227, 0.7); /* Light glow */
+  text-shadow: 1px 1px 4px rgba(255, 193, 227, 0.7);
 }
 
-/* Style for movie card elements */
 .movie-card {
   border-radius: 16px;
   overflow: hidden;

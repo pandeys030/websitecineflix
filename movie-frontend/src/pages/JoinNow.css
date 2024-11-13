@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #141414; /* Black background */
-  color: #f7c2d3; /* Baby pink text */
+  background-color: #141414; 
+  color: #f7c2d3; 
   text-align: center;
   padding: 20px;
 }
@@ -17,15 +17,15 @@
   font-weight: bold;
   margin-bottom: 15px;
   max-width: 90%;
-  color: #f7c2d3; /* Baby pink heading */
+  color: #f7c2d3; 
   letter-spacing: 1px;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8); /* Shadow effect */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8); 
 }
 
 .join-now p {
   font-size: 1.2rem;
   margin-bottom: 25px;
-  color: #b3b3b3; /* Light gray paragraph text */
+  color: #b3b3b3;
   max-width: 80%;
   line-height: 1.4;
 }
@@ -43,8 +43,8 @@
   width: 100%;
   max-width: 350px;
   border: 1px solid #333;
-  background-color: #333; /* Dark background for inputs */
-  color: #f7c2d3; /* Baby pink text inside inputs */
+  background-color: #333; 
+  color: #f7c2d3; 
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   transition: border-color 0.3s ease;
@@ -52,12 +52,12 @@
 
 .join-form input:focus {
   outline: none;
-  border-color: #f7c2d3; /* Baby pink border on focus */
+  border-color: #f7c2d3; 
 }
 
 .join-form button {
-  background-color: #f7c2d3; /* Baby pink button background */
-  color: #141414; /* Black button text */
+  background-color: #f7c2d3; 
+  color: #141414; 
   border: none;
   padding: 12px 30px;
   font-size: 1.1rem;
@@ -72,18 +72,18 @@
 }
 
 .join-form button:hover {
-  background-color: #e50986; /* Red on hover */
+  background-color: #e50986; 
   transform: scale(1.02);
 }
 
 .login-prompt {
   margin-top: 20px;
   font-size: 1rem;
-  color: #b3b3b3; /* Light gray text for prompt */
+  color: #b3b3b3; 
 }
 
 .login-prompt a {
-  color: #f7c2d3; /* Baby pink link color */
+  color: #f7c2d3; 
   text-decoration: none;
   font-weight: bold;
 }

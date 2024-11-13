@@ -1,5 +1,5 @@
 // src/pages/MyList.js
-import axios from 'axios'; // Make sure axios is imported
+import axios from 'axios'; 
 import React, { useEffect, useState } from 'react';
 import MovieCard from '../components/MovieCard';
 
@@ -11,10 +11,10 @@ const MyList = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/my-list'); // Adjust URL if necessary
+        const response = await axios.get('http://localhost:3001/api/my-list'); 
         console.log('Fetched movies:', response.data); 
         if (response.data) {
-          setMyList(response.data); // Correctly use setMyList
+          setMyList(response.data); 
           setLoading(false);
         } else {
           setError('No movies found');

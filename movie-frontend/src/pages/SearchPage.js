@@ -2,10 +2,10 @@
 
 import { React, useEffect, useState } from 'react';
 
-import './SearchPage.css'; // Import the custom CSS
+import './SearchPage.css';
 
 const SearchPage = () => {
-  // Mock data: List of movies with posters
+  
   const movieData = [
     {
         id: 1,

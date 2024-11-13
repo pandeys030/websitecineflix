@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import MovieDetails from './components/MovieDetails';
 import FunFacts from './pages/FunFactPage';
 import Home from './pages/Home';
-import JoinNow from './pages/JoinNow'; // Import JoinNow component
+import JoinNow from './pages/JoinNow'; 
 import Login from './pages/Login';
 import MyList from './pages/MyList';
 
