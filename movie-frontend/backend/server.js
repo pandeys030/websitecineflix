@@ -1,15 +1,15 @@
 // server.js
-import cors from 'cors';
-import express from 'express';
-import connectDB from './config/db.js'; // Default import for connectDB
-import movieRoutes from './routes/movieRoutes.js'; // Import movie routes
-import myListRoutes from './routes/myListRoutes.js'; // Import my list routes
+const cors = require('cors');
+const express = require('express');
+const connectDB = require('./config/db.js'); // Default import for connectDB
+const movieRoutes = require('./routes/movieRoutes.js'); // Import movie routes
+const myListRoutes = require('./routes/myListRoutes.js'); // Import my list routes
 
 const app = express();
 
 // Middleware
-app.use(cors()); // Enable CORS for frontend requests
-app.use(express.json()); // Parse JSON data in the request body
+app.use(cors()); 
+app.use(express.json()); 
 
 // API Routes
 app.use('/api/movies', movieRoutes); // Route for movie-related actions

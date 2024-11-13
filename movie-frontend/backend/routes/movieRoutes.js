@@ -1,6 +1,6 @@
 // routes/movieRoutes.js
-import express from "express";
-import Movie from "../models/movie.js";
+const express = require("express");
+const Movie = require("../models/movie.js");
 
 const router = express.Router();
 
@@ -25,4 +25,4 @@ router.get("/:movieId", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;
