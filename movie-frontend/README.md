@@ -1,10 +1,21 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CINEFLIX
+Welcome to the Movie Website, your go-to platform for discovering and enjoying a curated list of great movies! 
+
+## Features:
+- **Home Page**: Browse a collection of top-rated movies.
+- **Search Page**: Easily search for movies by title, genre, or other criteria.
+- **Fun Facts Page**: Discover interesting and fun facts about movies, actors, and the film industry.
+- **Add to My List**: Users can add movies to their personal list for quick access and viewing later.
+
+## Tech Stack:
+- Local storage for movie data.
+- HTML, CSS, JavaScript, React for frontend.
+- NodeJs and MongoDB for backend.
+- A page for implementation of figma.
 
 ## Available Scripts
-
-In the project directory, you can run:
+Below are the steps to run this site.
 
 ### `npm start`
 
