@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import JoinNow from './pages/JoinNow'; 
 import Login from './pages/Login';
 import MyList from './pages/MyList';
+import SearchPge from './pages/SearchPage';
 
 import './App.css';
 function App() {
@@ -22,6 +23,8 @@ function App() {
           <Route path="/join-now" element={<JoinNow />} />  {/* Add JoinNow route */}
           <Route path="/fun-fact-page" element={<FunFacts />} /> 
           <Route path="/my-list" element={<MyList />} />
+          <Route path="/search" element={<SearchPage />} />
+       
        
        
         </Routes>
