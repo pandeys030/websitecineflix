@@ -1,6 +1,6 @@
 
 # CINEFLIX
-Welcome to the Movie Website, your go-to platform for discovering and enjoying a curated list of great movies! 
+Welcome to the movie website, Cineflix! your go-to platform for discovering and enjoying a curated list of great movies! 
 
 ## Features:
 - **Home Page**: Browse a collection of top-rated movies.
