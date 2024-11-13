@@ -374,7 +374,7 @@ const SearchPage = () => {
       {
         id: 40,
         title: "The Covenant",
-        poster: "/poster/thecovenant.jpg",
+        poster: "/poster/theconvenant.jpg",
         releaseDate: "2023",
         genre: ["Thriller", "War"],
         director: "Guy Ritchie",

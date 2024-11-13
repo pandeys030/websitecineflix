@@ -22,11 +22,12 @@
 // app.listen(3001, () => {
 //   console.log('Server is running on port 3001');
 // });
-import cors from 'cors';
-import express from 'express';
-import connectDB from './config/db.js'; // Default import for connectDB
-import movieRoutes from './routes/movieRoutes.js'; // Import movie routes
-import myListRoutes from './routes/myListRoutes.js'; // Import my list routes
+const cors = require('cors');
+const express = require('express');
+const connectDB = require('./config/db.js'); // Default import for connectDB
+const movieRoutes = require('./routes/movieRoutes.js'); // Import movie routes
+const myListRoutes = require('./routes/myListRoutes.js'); // Import my list routes
+
 
 
 const app = express();
