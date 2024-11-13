@@ -2,10 +2,11 @@
 
 import { React, useEffect, useState } from 'react';
 
-import './SearchPage.css';
+
+import './SearchPage.css'; // Import the custom CSS
 
 const SearchPage = () => {
-  
+  // Mock data: List of movies with posters
   const movieData = [
     {
         id: 1,
@@ -573,59 +574,6 @@ const SearchPage = () => {
             }
   ];
 
-//   const [query, setQuery] = useState(''); // To store the search query
-//   const [filteredMovies, setFilteredMovies] = useState(movieData); // To store the filtered movie list
-
-//   const handleSearch = (event) => {
-//     const searchQuery = event.target.value;
-//     setQuery(searchQuery);
-    
-//     // Filter movies based on the search query
-//     const results = movieData.filter(movie =>
-//       movie.title.toLowerCase().includes(searchQuery.toLowerCase())
-//     );
-//     setFilteredMovies(results);
-//   };
-
-//   return (
-//     <div className="search-page">
-//       <h2 className="search-heading">Search Results for "{query}"</h2>
-      
-//       {/* Search input field */}
-//       <input
-//         type="text"
-//         className="search-input"
-//         placeholder="Search for movies..."
-//         value={query}
-//         onChange={handleSearch}
-//       />
-
-//       {/* Display filtered movies */}
-//       {filteredMovies.length > 0 ? (
-//         <div className="movie-list">
-//           {filteredMovies.map((movie) => (
-//             <div key={movie.id} className="movie-card">
-//               <img 
-//                 src={movie.poster} 
-//                 alt={`${movie.title} poster`} 
-//                 className="movie-poster"
-//               />
-//               <div className="movie-info">
-//                 <h3 className="movie-title">{movie.title}</h3>
-//                 <p className="movie-description">{movie.description}</p>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       ) : (
-//         <p>No results found for "{query}"</p>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default SearchPage;
-
 const [query, setQuery] = useState('');
   const [filteredMovies, setFilteredMovies] = useState(movieData);
 
@@ -665,19 +613,19 @@ const [query, setQuery] = useState('');
       />
 
       {filteredMovies.length > 0 ? (
-        <div className="movie-list">
+        <div className="search-movie-list">
           {filteredMovies.map((movie) => (
-            <div key={movie.id} className="movie-card">
+            <div key={movie.id} className="search-movie-card">
               <img 
                 src={movie.poster} 
                 alt={`${movie.title} poster`} 
-                className="movie-poster"
+                className="search-movie-poster"
               />
-              <div className="movie-info">
-                <h3 className="movie-title">
+              <div className="search-movie-info">
+                <h3 className="search-movie-title">
                   {highlightText(movie.title)}
                 </h3>
-                <p className="movie-description">{movie.description}</p>
+                <p className="search-movie-description">{movie.description}</p>
               </div>
             </div>
           ))}
@@ -690,3 +638,4 @@ const [query, setQuery] = useState('');
 };
 
 export default SearchPage;
+
