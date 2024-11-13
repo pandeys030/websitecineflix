@@ -260,7 +260,6 @@ html {
     }
 }
 
-/* Optional: Add a hover effect for interactive elements */
 .interactive {
     transition: transform 0.2s ease;
 }
