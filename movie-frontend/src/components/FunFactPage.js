@@ -142,8 +142,6 @@ const funFacts = [
     title: "Hereditary",
     fact: "Toni Collette wasn't initially keen on doing another horror film but was so impressed by Ari Aster's script that she signed on immediately."
     }
-
-  // More fun facts here...
 ];
 
 const FunFactPage = () => {
